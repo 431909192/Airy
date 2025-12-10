@@ -9,9 +9,11 @@ class MainActivity : ComponentActivity() {
         setContent {
             MaterialTheme {
                 LoginScreen{host,port,username,password ->
+                    println("Connecting to FTP: $host:$port")
                     }
                 }
             }
         }
     }
+
 
